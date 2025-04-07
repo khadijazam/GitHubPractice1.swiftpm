@@ -15,7 +15,6 @@ struct ContentView: View {
             Circle()
                 .frame(width: 100,height: 29)
             
-            
             // STICKMAN
             HStack{
                 Ellipse()
@@ -39,9 +38,8 @@ struct ContentView: View {
                     .frame(width: 15, height: 50)
                     .rotationEffect(.degrees(-20))
                     .offset(x: 12, y: -9)
-                
-               
             }
+            
             TextField("What's your name?", text: $username)
                 .textFieldStyle(.roundedBorder)
             
@@ -58,6 +56,7 @@ struct ContentView: View {
             }
             Image(systemName: imageName)
         }
+        .dynamicTypeSize(.medium)
     }
     func toggleImage() {
         if showImage {
